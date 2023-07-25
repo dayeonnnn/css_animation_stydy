@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bg {
+            height: 500px;
+            background: linear-gradient(-45deg,red,blue,green,yellow);
+            background-size: 400%;
+            animation: bg 5s ease alternate infinite;
+        }
+        @keyframes bg {
+            0% {background-position: 0 0;}
+            100% {background-position: 100% 50%;}
+        }
+        #btn1 {
+            background: linear-gradient(90deg,rgb(227, 240, 255),rgb(110, 132, 255),black);
+            border:none;
+            background-size: 400%;
+            width: 100px; height: 50px;
+            transition: all 1s;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        #btn1:hover {
+            color:#fff;
+            background-position: 100% 0;
+        }
+        #btn2 {
+            background: radial-gradient(circle,rgb(227, 240, 255),rgb(110, 132, 255),black);
+            border:none;
+            width: 100px; height: 100px; border-radius: 50%;
+            background-size: 250%;
+            background-position: center;
+            transition: all 1s;
+        }
+        #btn2:hover {
+            color:#fff;
+            background-position: 100% 0;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1" type="button">click here!</button>
+    <button id="btn2" type="button">click<br>here!</button>
+    <div id="bg"></div>
+</body>
+</html>
